@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="PruebaTelado.View.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PruebaTelado.View"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <!-- One style for each *type* of control on the window -->
+        <Style TargetType="Button"  x:Key="Alinear">
+            <Setter Property="Margin" Value="95"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="20"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+
+
+        <Button Content="Button" Style="{StaticResource baseStyle}" Margin="232,211,498,169" />
+        <Button Content="7" Style="{StaticResource TabButtonLast }" Margin="452,307,259,58" Width="Auto" />
+        <Button Content="6" Style="{StaticResource TabButtonLast}" Margin="360,307,353,58" Width="Auto"  />
+        <Button Content="8" Style="{StaticResource baseStyle}" materialDesign:ButtonAssist.CornerRadius="5" Click="Button_Click" Margin="114,120,616,260"/>
+
+
+        <Button Content="Button" Style="{StaticResource baseStyle}" Margin="114,120,616,260"  />
+        <Button Content="7" Style="{StaticResource TabButtonLast}" Margin="58,218,657,147"   />
+        <Button Content="6" Style="{StaticResource TabButtonLast}" Margin="298,86,417,279"  />
+        <StackPanel Margin="10,0,-10,0">
+            <!--<Button Content="8" Style="{StaticResource baseStyle}" materialDesign:ButtonAssist.CornerRadius="5" Click="Button_Click"/>-->
+            <!--<TextBox Text="TextBox"/>
+            <TextBox Text="TextBox"/>
+            <TextBox Text="TextBox"/>
+            <TextBlock Text="TextBlock"/>-->
+        </StackPanel>
+
+    </Grid>
+</UserControl>
