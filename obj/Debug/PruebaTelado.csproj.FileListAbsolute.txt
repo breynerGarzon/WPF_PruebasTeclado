@@ -22,3 +22,5 @@ D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\PruebaTela
 D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\PruebaTelado.csproj.CopyComplete
 D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\PruebaTelado.exe
 D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\PruebaTelado.pdb
+D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\View\tecladoNumerico.g.cs
+D:\Proyectos\WPF\PruebaTeclado\PruebaTeladoSol\PruebaTelado\obj\Debug\View\tecladoNumerico.baml

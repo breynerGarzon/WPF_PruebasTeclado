@@ -10,9 +10,14 @@
 
     <UserControl.Resources>
         <!-- One style for each *type* of control on the window -->
-        <Style TargetType="Button"  x:Key="Alinear">
-            <Setter Property="Margin" Value="95"/>
+        <Style TargetType="TextBox"  x:Key="Alinear">
+            <Setter Property="Margin" Value="5"/>
         </Style>
+
+        <Style TargetType="Button"  x:Key="Alinear2">
+            <Setter Property="Margin" Value="0,5,5,0"/>
+        </Style>
+
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="20"/>
         </Style>
@@ -20,7 +25,8 @@
     <Grid>
 
 
-        <Button Content="Button" Style="{StaticResource baseStyle}" Margin="232,211,498,169" />
+        <Button Content="Button" Style="{StaticResource baseStyle}" Height="Auto" Width="Auto" Margin="469,156,253,215" />
+
         <Button Content="7" Style="{StaticResource TabButtonLast }" Margin="452,307,259,58" Width="Auto" />
         <Button Content="6" Style="{StaticResource TabButtonLast}" Margin="360,307,353,58" Width="Auto"  />
         <Button Content="8" Style="{StaticResource baseStyle}" materialDesign:ButtonAssist.CornerRadius="5" Click="Button_Click" Margin="114,120,616,260"/>
@@ -29,13 +35,35 @@
         <Button Content="Button" Style="{StaticResource baseStyle}" Margin="114,120,616,260"  />
         <Button Content="7" Style="{StaticResource TabButtonLast}" Margin="58,218,657,147"   />
         <Button Content="6" Style="{StaticResource TabButtonLast}" Margin="298,86,417,279"  />
-        <StackPanel Margin="10,0,-10,0">
+        <StackPanel>
             <!--<Button Content="8" Style="{StaticResource baseStyle}" materialDesign:ButtonAssist.CornerRadius="5" Click="Button_Click"/>-->
-            <!--<TextBox Text="TextBox"/>
-            <TextBox Text="TextBox"/>
-            <TextBox Text="TextBox"/>
-            <TextBlock Text="TextBlock"/>-->
+            <TextBox Text="TextBox" Style="{StaticResource Alinear}"/>
+            <TextBox Text="TextBox" Style="{StaticResource Alinear}"/>
+            <TextBox Text="TextBox" Style="{StaticResource Alinear}"/>
+            <TextBlock Text="TextBlock"/>
         </StackPanel>
 
+        <Grid VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="85"/>
+                <RowDefinition Height="85"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="556,76,144,-268">
+                <!--<Button Content="Aline" Style="{StaticResource TabButtonLast}"  Margin="0,5,0,0"  />
+                <Button Content="Aline" Style="{StaticResource TabButtonLast}"  Margin="0,5,0,0"/>
+                <Button Content="Aline" Style="{StaticResource TabButtonLast}" Margin="0,5,0,0"/>-->
+
+                <Button Content="1" Style="{StaticResource TabButtonLast}"/>
+                <Button Content="4" Style="{StaticResource TabButtonLast}"/>
+                <Button Content="7" Style="{StaticResource TabButtonLast}"/>
+            </StackPanel>
+
+            <StackPanel Margin="613,76,87,-183" Grid.RowSpan="2">
+                <Button Content="2" Style="{StaticResource TabButtonLast}"/>
+                <Button Content="5" Style="{StaticResource TabButtonLast}"/>
+                <Button Content="8" Style="{StaticResource TabButtonLast}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>
